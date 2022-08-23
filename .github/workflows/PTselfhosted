@@ -24,11 +24,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:      
-      - name: Checkout
+     # - name: Checkout
         uses: actions/checkout@v2
         
       - name: Run JMeter Tests
-        uses: ./
+        #uses: ./
+        uses: actions/checkout@v2
         with:
           test-plan-path: './jenkinsdemo.jmx'
           args: ""
