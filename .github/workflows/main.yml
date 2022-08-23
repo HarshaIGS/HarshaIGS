@@ -34,8 +34,9 @@ jobs:
         uses: actions/checkout@v2
         with:
           # jmeter test plan to execute
-          test-plan-path: './jenkinsdemo.jmx'
-    
+          #test-plan-path: './jenkinsdemo.jmx'
+          testFilePath: './jenkinsdemo.jmx'
+              
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
