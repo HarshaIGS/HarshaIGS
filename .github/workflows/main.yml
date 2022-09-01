@@ -32,7 +32,7 @@ jobs:
         # uses: QAInsights/PerfAction@e9460cd32edbd6686068034e4b2d5c0fa7a1568d
         #uses: QAInsights/PerfAction@3.0
         #uses: actions/checkout@v2
-        uses: peter-evans/create-pull-request@v2-multi
+        uses: peter-evans/create-pull-request@v2
         with:
           # jmeter test plan to execute
           test-plan-path: './jenkinsdemo.jmx'
