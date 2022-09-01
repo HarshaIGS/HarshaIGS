@@ -35,7 +35,8 @@ jobs:
         with:
           # jmeter test plan to execute
           #test-plan-path: './jenkinsdemo.jmx'
-          testFilePath: './jenkinsdemo.jmx'
+          #testFilePath: './jenkinsdemo.jmx'
+          run: './JmeterGit.bat'
               
       - name: Upload Results
         uses: actions/upload-artifact@v2
